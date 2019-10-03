@@ -4,8 +4,11 @@ Henry Hub Natural Gas Spot Price dataset including daily, monthly and annual.
 
 ## Data
 
+These series show prices of Natural Gas since 1997. Daily, monthly and annual prices are included in the data package.
+
 ## Source
 
+EIA - Energy Information Administration
 https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm
 
 ## Preparation
@@ -16,7 +19,7 @@ You can run the script yourself to update the data. The files are created in the
 python data_wrangling_ngp.py
 ```
 
-### Dependencies
+#### Dependencies
 
 Dependencies can be installed using pip install and the requirements.txt file in the scprits directory.
 

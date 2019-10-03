@@ -30,8 +30,10 @@ pip install requirements.txt
 ## Visualization
 
 The file ngp_visualization.html produces a visualization from static files created by plot_ngp_data.py using matplotlib.
-As the graphics are in static files, you need to run the script to update the images. The files are created in the static directory.
+As the graphics are in static files, you can run the script to update the images. The files are created in the static directory.
 
 ```
 python plot_ngp_data.py
 ```
+
+Then you can open the file ngp_visualization.html directly in your browser.

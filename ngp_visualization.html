@@ -1,0 +1,66 @@
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Social Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container-fluid bg-info text-white text-center pt-2 pb-2">
+        <h1>Natural Gas Price</h1>
+    </div>
+
+    <div class="container text-center mt-2">
+
+        <div class="row">
+        
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" id="bt-daily" class="btn btn-info" onclick="dailyImage()">Daily</button>
+                <button type="button" id="bt-monthly" class="btn btn-info" onclick="monthlyImage()">Monthly</button>
+                <button type="button" id="bt-annual" class="btn btn-info" onclick="annualImage()">Annual</button>
+            </div>
+
+        </div>
+
+        <div class="row shadow bg-white">
+            <img id="ngp_image" src="static/ngp_daily.png" class="rounded" alt="Daily Natural Gas Price">
+        </div>
+        
+
+    </div>
+
+    <footer class="bg-info">
+
+    </footer>
+
+  </body>
+
+  <script>
+
+        function dailyImage() {
+            var image = document.getElementById('ngp_image');
+            image.src = "static/ngp_daily.png";
+            image.alt = "Daily Natural Gas Price";
+        }
+
+        function monthlyImage() {
+            var image = document.getElementById('ngp_image');
+            image.src = "static/ngp_monthly.png";
+            image.alt = "Monthly Natural Gas Price";
+        }
+
+        function annualImage() {
+            var image = document.getElementById('ngp_image');
+            image.src = "static/ngp_annual.png";
+            image.alt = "Annual Natural Gas Price";
+        }
+
+  </script>
+
+</html>

@@ -1,0 +1,70 @@
+{
+    "name": "natural-gas-prices",
+    "title": "Natural Gas Prices",
+    "description": "Daily, monthly and annual natural gas prices since 1997.",
+    "keywords": ["natural", "gas", "prices", "eia", "daily", "monthly", "annual"],
+    "last_updated": "2019-09-02",
+    "sources": [{
+      "title": "EIA - U.S. Energy Information Administration",
+      "path": "https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm"
+    }],
+    "resources": [
+      {
+        "name": "natural_gas_prices_daily",
+        "path": "data/natural_gas_prices_daily.csv",
+        "format": "csv",
+        "mediatype": "text/csv",
+        "schema": {
+            "fields": [
+            {
+                "name": "Date",
+                "type": "date",
+                "description": "Date of the time series."
+            },
+            {
+                "name": "Price",
+                "type": "float",
+                "description": "Price of the gas."
+            }]
+        }
+      },
+      {
+        "name": "natural_gas_prices_monthly",
+        "path": "data/natural_gas_prices_monthly.csv",
+        "format": "csv",
+        "mediatype": "text/csv",
+        "schema": {
+            "fields": [
+            {
+                "name": "Date",
+                "type": "date",
+                "description": "Date of the time series."
+            },
+            {
+                "name": "Price",
+                "type": "float",
+                "description": "Price of the gas."
+            }]
+        }
+      },
+      {
+        "name": "natural_gas_prices_annual",
+        "path": "data/natural_gas_prices_annual.csv",
+        "format": "csv",
+        "mediatype": "text/csv",
+        "schema": {
+            "fields": [
+            {
+                "name": "Date",
+                "type": "date",
+                "description": "Date of the time series."
+            },
+            {
+                "name": "Price",
+                "type": "float",
+                "description": "Price of the gas."
+            }]
+        }         
+      }
+    ]
+}
